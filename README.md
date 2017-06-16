@@ -4,7 +4,9 @@ Downloads:
 ==========
 
 [Gephi](https://gephi.org/)
+
 [R](https://cran.cnr.berkeley.edu/)
+
 [RStudio](https://www.rstudio.com/products/rstudio/download2/)
 
 Data Cleaning
