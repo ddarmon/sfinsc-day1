@@ -32,6 +32,10 @@ To introduce network visualization and analysis, we will be working with four da
 
 ### Stock Market
 
+![Demo stock data](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/demo-gephi-workspace.png)
+
+![Demo stock data](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/stock-demo.png)
+
 ### Political Blogs
 
 ### Voting Records
