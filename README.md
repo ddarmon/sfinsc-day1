@@ -2,7 +2,11 @@
 
 ## Downloads
 
-Before we get started, we need to install several applications for working with network data. Today, we will be using Gephi and R, along with a few of their packages.
+Before we get started, we need to install several applications for working with network data. Today, we will be using Sublime Text, Gephi, and R, along with a few of their packages.
+
+[Sublime Text](https://www.sublimetext.com/) provides flexible handling of large text files:
+
+* [Sublime Text](https://www.sublimetext.com/)
 
 We will be using [Gephi](https://gephi.org/) for network visualization:
 
@@ -24,11 +28,21 @@ Finally, for additional network analysis tools, will use the igraph library for 
 
 * [igraph](http://igraph.org/r/)  
 
+## Data Cleaning
+
+## Network Visualization and Exploratory Data Analysis with Gephi
+
+## Network Statistics with Gephi
+
+## Network Analysis with igraph
+
 ## The Data Sets
 
 To introduce network visualization and analysis, we will be working with four data sets: a collaboration network from IMDB, a correlation network from S&P 500 companies, a link network   from political blogs, and a voting record network from the US House of Representatives.
 
 ### IMDB
+
+The original data are available here.
 
 ### Stock Market
 
@@ -38,12 +52,8 @@ To introduce network visualization and analysis, we will be working with four da
 
 ### Political Blogs
 
+The original data are available [here](https://networkdata.ics.uci.edu/data.php?id=102).
+
 ### Voting Records
 
-## Data Cleaning
-
-## Network Visualization and Exploratory Data Analysis with Gephi
-
-## Network Statistics with Gephi
-
-## Network Analysis with igraph
+The original data are available [here](https://voteview.com/data).
