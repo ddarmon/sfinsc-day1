@@ -1,4 +1,4 @@
-# Day 1 -- Network Data Analysis
+# Day 1 &mdash; Network Data Analysis
 
 ## Downloads
 
