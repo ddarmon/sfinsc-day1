@@ -38,22 +38,24 @@ Finally, for additional network analysis tools, will use the igraph library for 
 
 ## The Data Sets
 
-To introduce network visualization and analysis, we will be working with four data sets: a collaboration network from IMDB, a correlation network from S&P 500 companies, a link network   from political blogs, and a voting record network from the US House of Representatives.
+To introduce network visualization and analysis, we will be working with three data sets: collaboration networks from IMDB, correlation networks from S&P 500 companies, and a co-voting network from the US Senate.
 
 ### IMDB
 
 The original data are available here.
 
-### Stock Market
+### S&P 500 Correlation Networks
 
-![Demo stock data](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/demo-gephi-workspace.png)
+Start [here](https://github.com/ddarmon/sfinsc-day1/blob/master/sp500.md).
 
 ![Demo stock data](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/stock-demo.png)
 
+<!--
 ### Political Blogs
 
 The original data are available [here](https://networkdata.ics.uci.edu/data.php?id=102).
+-->
 
-### Voting Records
+### US Senate Co-Voting Network
 
-The original data are available [here](https://voteview.com/data).
+Start [here](https://github.com/ddarmon/sfinsc-day1/blob/master/senate.md).

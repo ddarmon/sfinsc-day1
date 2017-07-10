@@ -1,6 +1,8 @@
-# US Senate Co-Voting Network
+# US Senate Co-Voting Networks
 
 ## The Data
+
+The original data are available [here](https://voteview.com/data).
 
 ## Data Cleaning
 
