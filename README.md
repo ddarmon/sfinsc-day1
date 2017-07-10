@@ -28,6 +28,10 @@ Finally, for additional network analysis tools, will use the igraph library for 
 
 * [igraph](http://igraph.org/r/)  
 
+## A `Hello World' Network Analysis: Collaboration Networks from IMDB
+
+For our first network, we will investigate co-acting networks generated using data from the [Internet Movie Database (IMDB)](http://www.imdb.com/). In our co-acting network, the nodes will correspond to actors, and an edge will exist between two nodes (actors) if the actors appeared in one or more movies together.
+
 ## Data Cleaning
 
 ## Network Visualization and Exploratory Data Analysis with Gephi
@@ -38,7 +42,7 @@ Finally, for additional network analysis tools, will use the igraph library for 
 
 ## The Data Sets
 
-To introduce network visualization and analysis, we will be working with three data sets: collaboration networks from IMDB, correlation networks from S&P 500 companies, and a co-voting network from the US Senate.
+To explore Network Data Analysis and gephi, you will be working with two data sets: correlation networks for S&P 500 companies and a co-voting network from the US Senate.
 
 ### IMDB
 
