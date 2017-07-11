@@ -48,6 +48,12 @@ A snippet from the ``actor_net.graphml'' is below:
 
 ![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/actor_net_sublimetext.png)
 
+We see that the network is stored in XML format. GraphML is an XML-based network format, with a bit more sophistication than a simple edge list or adjacency matrix. Fortunately, Gephi supports GraphML, [among many other formats](https://gephi.org/users/supported-graph-formats/), so we can load the network into Gephi without knowing the ins-and-outs of the format.
+
+Begin by opening Gephi. After the splash screen closes, you should see the main window for Gephi:
+
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/gephi-gui.png)
+
 ## Network Statistics with Gephi
 
 ## Network Analysis with igraph
