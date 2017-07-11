@@ -68,6 +68,18 @@ Back in the Graph pane, we see that the network is more-or-less a 'hairball,' a 
 
 ![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/network-after-openord.png)
 
+That's better! We can already start to see a good amount of structure in the network. We see several disconnected components in the network.
+
+> **Exercise:** Why do we see isolated clusters of actors?
+
+Let's try running another network layout algorithm, this time the [Fruchterman-Reingold](https://github.com/gephi/gephi/wiki/Fruchterman-Reingold) algorithm. Choose Fruchterman Reingold from the dropdown menu and click Run.
+
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/network-after-fr.png)
+
+Fruchterman-Reingold is a force-directed layout: that means it treats the the nodes as embedded in a (purely hypothetical!) physical system, where attraction / repulsion between nodes is determined by whether or not nodes are connected.. See [here](http://citeseer.ist.psu.edu/viewdoc/download;jsessionid=19A8857540E8C9C26397650BBACD5311?doi=10.1.1.13.8444&rep=rep1&type=pdf) for more details. We see that after applying Fruchterman-Reingold, some of the clusters have 'relaxed.'
+
+> **Pointer:** If you ever want to 'reset' the layout, you can run Random Layout, which randomly distributes the nodes of the network in a prescribed volume of space. Then you can run the desired layout algorithm 'from scratch.'
+
 ## Network Statistics with Gephi
 
 ## Network Analysis with igraph
