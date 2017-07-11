@@ -62,6 +62,12 @@ This gives us some details about the network. By default, Gephi is treating the 
 
 ![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/actor-start-network.png)
 
+We now see the network in the Graph pane of the Overview perspective. If we click over to the Data Laboratory pane, we can see the network from ... (put more here)
+
+Back in the Graph pane, we see that the network is more-or-less a 'hairball,' a term of art for the naive representation of a network with many nodes and edges. A good first starting point in Gephi is to attempt various different layouts of the network. Gephi has six or so non-trivial network layout algorithms. As a start, run the OpenOrd layout algorithm by choosing OpenOrd from the Layout dropdown menu and clicking Run. Click the magnifying glass in the bottom left corner of the Graph pane to reset the zoom to include the entire network.
+
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/network-after-openord.png)
+
 ## Network Statistics with Gephi
 
 ## Network Analysis with igraph
