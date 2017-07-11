@@ -50,9 +50,17 @@ A snippet from the ``actor_net.graphml'' is below:
 
 We see that the network is stored in XML format. GraphML is an XML-based network format, with a bit more sophistication than a simple edge list or adjacency matrix. Fortunately, Gephi supports GraphML, [among many other formats](https://gephi.org/users/supported-graph-formats/), so we can load the network into Gephi without knowing the ins-and-outs of the format.
 
-Begin by opening Gephi. After the splash screen closes, you should see the main window for Gephi:
+Begin by opening Gephi. After the splash screen closes, you should see a prompt window. Choose New Project. This will lead to a blank Gephi project:
 
 ![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/gephi-gui.png)
+
+To load the network into Gephi, go to File > Open..., and navigate to folder where you saved the network. This should prompt the import report dialog box:
+
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/import-window.png)
+
+This gives us some details about the network. By default, Gephi is treating the network as undirected, and assumes we have 2185 nodes and 40484 edges. Click OK to load the network into the current Workspace.
+
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/actor-start-network.png)
 
 ## Network Statistics with Gephi
 
