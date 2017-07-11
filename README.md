@@ -82,6 +82,14 @@ Fruchterman-Reingold is a force-directed layout: that means it treats the the no
 
 ## Network Statistics with Gephi
 
+Now that we have gotten a feeling for the macro-scale structure of the network, let's compute some of the network statistics we heard about in Michelle's talk earlier today. Gephi provides a suite of statistics in the right hand Statistics pane:
+
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/statistics-pane.png)
+
+For example, click Run next to Average Degree to compute the degree distribution of the network:
+
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/degree-dist.png)
+
 ## Network Analysis with igraph
 
 ## The Data Sets
