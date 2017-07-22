@@ -12,11 +12,11 @@ The original data are available [here](https://voteview.com/data). Each file cor
 
 For each pair of senators, the edge weight is given by the probability that they voted the same during a given roll call vote. For example, if Senator A voted 1 6 1 6 1 and Senator B voted 1 1 6 6 1, then the edge between Senator A and Senator B has a weight of 3 / 5 = 0.6. 
 
-The ``vote_similarity_###.edges`` files list each pair of senators and their probability of agreement on a roll call vote. The ``vote_similarity_###.nodes`` files list the political party of each senator.
+The ``vote_similarity_###.edges`` files list each pair of senators and their probability of agreement on a roll call vote, where ``###`` corresponds to which congress is under consideration. The ``vote_similarity_###.nodes`` files list the political party of each senator.
 
 > **Exercise:** Open a few of the ``.edges`` and ``.nodes`` files in Sublime Text. Check that the edge weights seem to make sense, given what you know about how they were computed and the various senators.
 
-> **Exercise:** Load in the node list and edge list files ``vote_similarity_114.nodes`` and ``vote_similarity_114.edges`` for the 114th Senate.
+> **Exercise:** Load in the node list and edge list files ``vote_similarity_114.nodes`` and ``vote_similarity_114.edges`` for the 114th Senate. Use File > Import spreadsheet... Be sure that ``Separator:`` is set to the proper delimiter and ``As table:`` is set to ``Edges table`` or ``Nodes table``, depending on which file you are importing.
 
 The codes ``100``, ``200``, and ``328`` correspond to Democrats, Republicans, and Independents.
 
@@ -26,13 +26,29 @@ The codes ``100``, ``200``, and ``328`` correspond to Democrats, Republicans, an
 
 ## Explorations
 
+Begin by computing some of the network statistics from the co-voting network.
+
 > **Exercise:** Use Statistics > Avg. Weighted Degree to compute the average weighted degree of each senator. What does a large degree mean? A small degree? Which senators have the largest and smallest degrees?
 
-> **Exercise:** With the 114th Congress, use Filters > Edges > Edge Weight to filter for edges with strong voting similarity. Try different thresholds of similarity. Try running the Force Atlas 2 layout while changing the filter values for the edge weights.
+> **Exercise:** What other network statistics seem reasonable to compute using this network?
+
+As constructed, the graph associated with this network is *complete*: there is an edge between each pair of senators because we have computed the voting similarity between each pair of senators. Thus, for 100 senators, we have 4950 edges. 
+
+> **Exercise:** How do you determine the number of edges in an N node network? Hint: count the number of ways to pair each node with one of the other nodes, and account for duplicates from overcounting A -- B and B -- A.
+
+We can learn more about the voting patterns of the senators by filtering the edges based on either strong or weak voting similarity.
+
+> **Exercise:** Use Filters > Edges > Edge Weight to filter for edges with strong voting similarity. 
+
+> **Exercise:** Try different thresholds of similarity for filtering the edges. Try running the Force Atlas 2 layout while changing the filter values for the edge weights. Based on the layout alone, can you identify 'outlier' senators based on their roll call voting behavior?
 
 > **Exercise:** With the 114th Congress, use Filters > Edges > Edge Weight to filter for edges with strong voting *dis*similarity. What do you notice? What type of voting behavior do the 'hubs' in the filtered network correspond to?
 
 > **Exercise:** Compute some of the network statistics. How do they change as a function of the filtering?
+
+We often hear in the news that the political parties have become increasingly polarized in recent years. Our data set runs from the [102nd Congress](https://en.wikipedia.org/wiki/102nd_United_States_Congress) (in session from 1991-1992) to the [114th Congress](https://en.wikipedia.org/wiki/114th_United_States_Congress) (in session from 2015 - 2016).
+
+> **Exercise:** Rerun the analyses above for additional Congresses using the additional ``vote_similarity_###.edges`` and ``vote_similarity_###.edges`` files. What sort of network statistics can you use to track polarization over time? Does your analysis corroborate the common wisdom that the political parties have become increasingly polarized? 
 
 ## Final Thoughts and Further Reading
 
