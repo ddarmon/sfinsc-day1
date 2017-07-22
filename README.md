@@ -141,6 +141,29 @@ Set the working directory by entering the``setwd`` function in the Console:
 
 The new working directory is now shown in the top of the Console panel. Click the right arrow at the top of the Console panel to change the file browser to the new directory. Click on the ``igraph-example.R`` file to open the script in RStudio. R uses the suffix ``R`` for scripts, like ``c``, ``m``, or ``py`` for C, Matlab, or Python. The Source Panel now shows the code inside of ``igraph-example.R``.
 
+You can run the code line-by-line in the Console by hitting Control-Enter. The first line of uncommented code installs the igraph package.
+
+> install.packages('igraph')
+
+The next lines load the igraph library into R and import the IMDB network, assuming the graphml format.
+
+> library(igraph)
+> 
+> network = read_graph("data/imdb/actor_net.graphML", format = 'graphml')
+
+The remaining code uses igraph functions to analyze the network. A list of all igraph functions in R is available [here](http://igraph.org/r/doc/).
+
+> **NOTE:** R, like any programming language, has its quirks:
+>
+> * R indexes from 1. Not a quirk, per se, but something to keep in mind.
+> 	* Periods are treated like any other character, and are often found in function and variable names.
+> * Assignment to a variable can be done using either the usual '=', or R-specific '->'.
+> * Members of a list are accessed by the '$' operator. For example, eigen_centraliy returns a list with three members: vector, value, and options. To access the (eigen)vector, we use eigen_centrality.out$vector to access the vector member of the list eigen_centrality.out.
+
+With these in mind, let's explore some of the functionality of igraph.
+
+> **Exercise:** Running the remaining code in `igraph-example.R``, and compare to the statistics computed by Gephi.
+
 ## Network Exploration with Additional Data Sets
 
 To further hone your skills at Network Data Analysis and gephi, you can choose between two types of data sets: correlation networks for S&P 500 companies and a co-voting network from the US Senate.
