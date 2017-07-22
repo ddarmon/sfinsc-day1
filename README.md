@@ -80,7 +80,7 @@ Fruchterman-Reingold is a force-directed layout: that means it treats the the no
 
 Now that we have gotten a feeling for the macro-scale structure of the network, let's compute some of the network statistics we heard about in the talks earlier today. Gephi provides a suite of statistics in the right hand Statistics panel:
 
-![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/statistics-panel.png)
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/statistics-pane.png)
 
 For example, click Run next to Average Degree to compute the degree distribution of the network:
 
@@ -90,19 +90,21 @@ For example, click Run next to Average Degree to compute the degree distribution
 
 Gephi computes the in-degree and out-degree for each node in the network. After you compute a node-wise statistic, you can view that statistic for each node as a new column in the Data Laboratory panel:
 
-![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/.png)
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/data-laboratory-stats.png)
 
 You can also use node statistics to update the appearance of the network in the Overview panel. To rescale the nodes according to their degree, choose the Node Size icon in the Appearance panel, select the Ranking option, and set the dropdown menu to degree. Change the Max Size option to 40, and click Apply.
 
-![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/.png)
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/nodes-resized.png)
 
-To emphasize the nodes over the edges, reduce the width of the nodes using the slider in the bottom next to the capital T.
+To emphasize the nodes over the edges, reduce the width of the edges using the slider in the bottom next to the capital T.
 
-![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/.png)
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/nodes-resized-thin-edges.png)
 
 We see that the node sizes (and thus node degrees) are relatively homogeneous within an isolated cluster (why?), but that several 'bridge' nodes have larger degrees relative to their neighbors in the network. Let's select one of these bridge nodes to investigate its identity. To do so, select the Node Investigation pointer in the left pane of the Graph panel, and click on one of the bridge nodes:
 
-![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/.png)
+> **Tip:** To zoom in and out, use the scroll wheel on your mouse / the two finger swipe on your trackpad. On a Windows computer, use Right Click to drag. On a Mac, use Control-Click to drag.
+
+![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/shatner-node.png)
 
 We see that the bridge node corresponds to William Shatner. He appeared in several sci-fi movies in 1994, amongst them [*Star Trek: Generations*](http://www.imdb.com/title/tt0111280/?ref_=nm_flmg_act_86).
 
@@ -114,7 +116,7 @@ Degree is just one of many possible [node centralities](https://en.wikipedia.org
 
 ## Network Analysis with igraph &mdash; Network Analysis in a Scripting Environment
 
-Gephi is a great tool for visualizing and analyzing a network. If you are familiar with a scripting langauge (R, Python, Matlab, Octave, Julia, etc.), a great place to get started is with [igraph](http://igraph.org/r/). igraph provides a lot of the same functionality as gephi, but in a scripting environment that makes automating network analysis a snap.
+Gephi is a great tool for visualizing and analyzing a network. If you are familiar with a scripting langauge (R, Python, Matlab, Octave, Julia, etc.), a great place to get started is with [igraph](http://igraph.org/r/). igraph provides a lot of the same functionality as Gephi, but in a scripting environment that makes automating network analysis a snap.
 
 Let's use igraph to rerun some of the analyses we did in gephi with the IMDB network.
 
@@ -132,6 +134,6 @@ Start [here](https://github.com/ddarmon/sfinsc-day1/blob/master/sp500.md).
 The original data are available [here](https://networkdata.ics.uci.edu/data.php?id=102).
 -->
 
-### US Senate Co-Voting Network
+### US Senate Co-Voting Networks
 
 Start [here](https://github.com/ddarmon/sfinsc-day1/blob/master/senate.md).

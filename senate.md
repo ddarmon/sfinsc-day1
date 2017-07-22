@@ -12,7 +12,7 @@ The original data are available [here](https://voteview.com/data). Each file cor
 
 For each pair of senators, the edge weight is given by the probability that they voted the same during a given roll call vote. For example, if Senator A voted 1 6 1 6 1 and Senator B voted 1 1 6 6 1, then the edge between Senator A and Senator B has a weight of 3 / 5 = 0.6. 
 
-The ``vote_similarity_###.edges`` files list each pair of senators and their probability of agreement on a roll call vote, where ``###`` corresponds to which congress is under consideration. The ``vote_similarity_###.nodes`` files list the political party of each senator.
+The ``vote_similarity_###.edges`` files list each pair of senators and their probability of agreement on a roll call vote, where ``###`` corresponds to which Congress is under consideration. The ``vote_similarity_###.nodes`` files list the political party of each senator.
 
 > **Exercise:** Open a few of the ``.edges`` and ``.nodes`` files in Sublime Text. Check that the edge weights seem to make sense, given what you know about how they were computed and the various senators.
 
