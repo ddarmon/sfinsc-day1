@@ -120,6 +120,27 @@ Gephi is a great tool for visualizing and analyzing a network. If you are famili
 
 Let's use igraph to rerun some of the analyses we did in gephi with the IMDB network.
 
+Open RStudio. RStudio is an [Integrated Development Environment](https://en.wikipedia.org/wiki/Integrated_development_environment) for R. The IDE includes a Console for active exploration, Environment and History tabs to track variables and previous statements, a File Browser, plotting functionality, debugging and profiling capabilities, and much more.
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/rstudio-fresh.png">
+</p>
+
+First, we need to set the working directory to the sfinsc-day1 folder on your machine.
+
+> **Exercise:**
+> 
+> In Mac OS, get the path by Option-Right-clicking on sfinsc-day1 and selecting ``Copy "sfinsc-day1" as Pathname``.
+> 
+> In Windows, get the path by Shift-Right-clicking on  sfinsc-day1 and selecting ``Copy Path``.
+> **NOTE:** Windows uses backslashes (\) between directories, while R expects forward slashes (/). You will have to manually change the backslashes to forward slashes. I suggeset using Find & Replace in Sublime Text.
+
+Set the working directory by entering the``setwd`` function in the Console:
+
+> setwd('path/to/sfinsc-day1')
+
+The new working directory is now shown in the top of the Console panel. Click the right arrow at the top of the Console panel to change the file browser to the new directory. Click on the ``igraph-example.R`` file to open the script in RStudio. R uses the suffix ``R`` for scripts, like ``c``, ``m``, or ``py`` for C, Matlab, or Python. The Source Panel now shows the code inside of ``igraph-example.R``.
+
 ## Network Exploration with Additional Data Sets
 
 To further hone your skills at Network Data Analysis and gephi, you can choose between two types of data sets: correlation networks for S&P 500 companies and a co-voting network from the US Senate.
