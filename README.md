@@ -162,7 +162,7 @@ The remaining code uses igraph functions to analyze the network. A list of all i
 
 With these in mind, let's explore some of the functionality of igraph.
 
-> **Exercise:** Running the remaining code in `igraph-example.R``, and compare to the statistics computed by Gephi.
+> **Exercise:** Running the remaining code in ``igraph-example.R``, and compare to the statistics computed by Gephi.
 
 ## Network Exploration with Additional Data Sets
 
