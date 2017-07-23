@@ -156,7 +156,7 @@ The remaining code uses igraph functions to analyze the network. A list of all i
 > **NOTE:** R, like any programming language, has its quirks:
 >
 > * R indexes from 1. Not a quirk, per se, but something to keep in mind.
-> 	* Periods are treated like any other character, and are often found in function and variable names.
+> * Periods are treated like any other character, and are often found in function and variable names.
 > * Assignment to a variable can be done using either the usual '=', or R-specific '->'.
 > * Members of a list are accessed by the '$' operator. For example, eigen_centraliy returns a list with three members: vector, value, and options. To access the (eigen)vector, we use eigen_centrality.out$vector to access the vector member of the list eigen_centrality.out.
 
