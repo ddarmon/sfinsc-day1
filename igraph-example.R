@@ -1,5 +1,4 @@
-# Uncomment v the first time you run, to 
-# install igraph:
+# Uncomment v the first time you run, to install igraph:
 install.packages('igraph')
 
 library(igraph)
