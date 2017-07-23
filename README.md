@@ -166,7 +166,7 @@ With these in mind, let's explore some of the functionality of igraph.
 
 ## Network Exploration with Additional Data Sets
 
-To further hone your skills at Network Data Analysis and gephi, you can choose between two types of data sets: correlation networks for S&P 500 companies and a co-voting network from the US Senate.
+To further hone your skills at Network Data Analysis and gephi, you choose between two types of data sets: correlation networks for S&P 500 companies and a co-voting networks from the US Senate.
 
 ### S&P 500 Correlation Networks
 
