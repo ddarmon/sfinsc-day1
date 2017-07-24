@@ -26,7 +26,7 @@ A nice Integrated Development Environment (IDE) for R can be found here:
 
 ## A 'Hello World' Network Analysis: Collaboration Networks from IMDB
 
-For our first network, we will investigate co-acting networks generated using data from the [Internet Movie Database (IMDB)](http://www.imdb.com/). In our co-acting network, the nodes will correspond to actors, and an edge will exist between two nodes (actors) if the actors appeared in one or more movies together.
+For our first network, we will investigate a co-acting network generated using data from the [Internet Movie Database (IMDB)](http://www.imdb.com/). In our co-acting network, the nodes will correspond to actors, and an edge will exist between two nodes (actors) if the actors appeared in one or more movies together.
 
 > **Explore:** What sort of questions might we answer using co-acting network? About actors? About genres? About different eras of film?
 
@@ -38,9 +38,9 @@ This network is very large: it consists of 428440 movies and 896308 actors. For 
 
 ## Network Visualization and Exploratory Data Analysis with Gephi
 
-Begin by opening the ``actor_net.graphml'' file in the data folder in Sublime Text. If your computer does not recognize the .graphml file extension, you may need to set the file to Open With Sublime Text. (Add details here.)
+Begin by opening the ``actor_net.graphml`` file in the data folder in Sublime Text. If your computer does not recognize the ``.graphml`` file extension, you may need to set the file to Open With Sublime Text. If needed, right-click on the file and select Open With, then select Sublime Text.
 
-A snippet from the ``actor_net.graphml'' is below:
+A snippet from the ``actor_net.graphml`` is below:
 
 ![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/actor_net_sublimetext.png)
 
@@ -72,7 +72,7 @@ Let's try running another network layout algorithm, this time the [Fruchterman-R
 
 ![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/network-after-fr.png)
 
-Fruchterman-Reingold is a force-directed layout: that means it treats the the nodes as embedded in a (purely hypothetical!) physical system, where attraction / repulsion between nodes is determined by whether or not nodes are connected. See [here](http://citeseer.ist.psu.edu/viewdoc/download;jsessionid=19A8857540E8C9C26397650BBACD5311?doi=10.1.1.13.8444&rep=rep1&type=pdf) for more details. We see that after applying Fruchterman-Reingold, some of the clusters have 'relaxed.'
+Fruchterman-Reingold is a force-directed layout: that means it treats the the nodes as embedded in a (purely hypothetical!) physical system, where attraction / repulsion between nodes is determined by forces related to the proximity of nodes and whether or not they are connected. See [here](http://citeseer.ist.psu.edu/viewdoc/download;jsessionid=19A8857540E8C9C26397650BBACD5311?doi=10.1.1.13.8444&rep=rep1&type=pdf) for more details. We see that after applying Fruchterman-Reingold, some of the clusters have 'relaxed.'
 
 > **Pointer:** If you ever want to 'reset' the layout, you can run Random Layout, which randomly distributes the nodes of the network in a prescribed volume of space. Then you can run the desired layout algorithm 'from scratch.'
 
@@ -158,7 +158,7 @@ The remaining code uses igraph functions to analyze the network. A list of all i
 > * R indexes from 1. Not a quirk, per se, but something to keep in mind.
 > * Periods are treated like any other character, and are often found in function and variable names.
 > * Assignment to a variable can be done using either the usual '=', or R-specific '->'.
-> * Members of a list are accessed by the '$' operator. For example, eigen_centraliy returns a list with three members: vector, value, and options. To access the (eigen)vector, we use eigen_centrality.out$vector to access the vector member of the list eigen_centrality.out.
+> * Members of a list are accessed by the '$' operator. For example, eigen_centrality returns a list with three members: vector, value, and options. To access the (eigen)vector, we use eigen_centrality.out$vector to access the vector member of the list eigen_centrality.out.
 
 With these in mind, let's explore some of the functionality of igraph.
 
@@ -166,7 +166,7 @@ With these in mind, let's explore some of the functionality of igraph.
 
 ## Network Exploration with Additional Data Sets
 
-To further hone your skills at Network Data Analysis and Gephi, you choose between two types of data sets: correlation networks for S&P 500 companies and a co-voting networks from the US Senate.
+To further hone your skills at Network Data Analysis and Gephi, choose between two data sets: correlation networks for S&P 500 companies and co-voting networks from the US Senate.
 
 ### S&P 500 Correlation Networks
 

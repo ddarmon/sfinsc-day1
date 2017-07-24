@@ -1,16 +1,16 @@
 # US Senate Co-Voting Networks
 
-In this example, we will consider a network generated from the co-voting behavior of U.S. Senators over various Congresses. By considering the pairwise similarity in the voting records of senators, we can explore the political organization of the Senate and how it has changed over time.
+In this example, we will consider networks generated from the co-voting behavior of U.S. Senators over various Congresses. By considering the pairwise similarity in the voting records of senators, we can explore the political organization of the Senate and how it has changed over time.
 
 ## The Data
 
-Roll call votes in the Senate and House are in the public record. You can find the official data from the Senate [here](https://www.senate.gov/reference/common/faq/how_to_votes.htm). We will be using data compiled by [Voteview](https://voteview.com/).
+Roll call votes in the Senate and House are in the public record. You can find the official data for the Senate [here](https://www.senate.gov/reference/common/faq/how_to_votes.htm). We will be using data compiled by [Voteview](https://voteview.com/).
 
-The original data are available [here](https://voteview.com/data). Each file corresponds to a particular Congress, and includes each 100 (+) Senator, their state, party affiliation, and other meta-data. For each roll call vote, a senator's vote is coded as 1 (yay), 6 (nay), 9 (abstention), or 0 (not in legislature).
+The original data are available [here](https://voteview.com/data). Each file corresponds to a particular Congress, and includes each 100 (+) senators in that Congress, along with their state, party affiliation, and other meta-data. For each roll call vote, a senator's vote is coded as 1 (yay), 6 (nay), 9 (abstention), or 0 (not in legislature).
 
 ## Network Construction
 
-For each pair of senators, the edge weight is given by the probability that they voted the same during a given roll call vote. For example, if Senator A voted 1 6 1 6 1 and Senator B voted 1 1 6 6 1, then the edge between Senator A and Senator B has a weight of 3 / 5 = 0.6. 
+For each pair of senators, we will weight the edge between them by the probability that they voted the same during a given roll call vote. For example, if Senator A voted 1 6 1 6 1 and Senator B voted 1 1 6 6 1, then the edge between Senator A and Senator B has a weight of 3 / 5 = 0.6. 
 
 The ``vote_similarity_###.edges`` files list each pair of senators and their probability of agreement on a roll call vote, where ``###`` corresponds to which Congress is under consideration. The ``vote_similarity_###.nodes`` files list the political party of each senator.
 
@@ -22,7 +22,7 @@ The codes ``100``, ``200``, and ``328`` correspond to Democrats, Republicans, an
 
 > **Explore:** Color the nodes according to party affiliation. 
 
-> **Explore:** Try a few of the different layouts. Which ones show the clear separation between the two parties? Which do not? Why?
+> **Explore:** Try a few of the different layouts. Which ones show a clear separation between the two parties? Which do not? Why?
 
 ## More Explorations
 
