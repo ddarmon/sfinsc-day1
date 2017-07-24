@@ -28,7 +28,7 @@ A nice Integrated Development Environment (IDE) for R can be found here:
 
 For our first network, we will investigate co-acting networks generated using data from the [Internet Movie Database (IMDB)](http://www.imdb.com/). In our co-acting network, the nodes will correspond to actors, and an edge will exist between two nodes (actors) if the actors appeared in one or more movies together.
 
-> **Exercise:** What sort of questions might we answer using co-acting network? About actors? About genres? About different eras of film?
+> **Explore:** What sort of questions might we answer using co-acting network? About actors? About genres? About different eras of film?
 
 ## Data Cleaning
 
@@ -66,7 +66,7 @@ Back in the Graph panel, we see that the network is more-or-less a 'hairball,' a
 
 That's better! We can already start to see a good amount of structure in the network. We see several disconnected components in the network.
 
-> **Exercise:** Why do we see isolated clusters of actors?
+> **Explore:** Why do we see isolated clusters of actors?
 
 Let's try running another network layout algorithm, this time the [Fruchterman-Reingold](https://github.com/gephi/gephi/wiki/Fruchterman-Reingold) algorithm. Choose Fruchterman Reingold from the dropdown menu and click Run.
 
@@ -86,7 +86,7 @@ For example, click Run next to Average Degree to compute the degree distribution
 
 ![Alt Text](https://raw.githubusercontent.com/ddarmon/sfinsc-day1/master/graphics/degree-dist.png)
 
-> **Exercise:** Does the degree distribution look like a 'power law'? How would you tell?
+> **Explore:** Does the degree distribution look like a 'power law'? How would you tell?
 
 Gephi computes the in-degree and out-degree for each node in the network. After you compute a node-wise statistic, you can view that statistic for each node as a new column in the Data Laboratory panel:
 
@@ -108,11 +108,11 @@ We see that the node sizes (and thus node degrees) are relatively homogeneous wi
 
 We see that the bridge node corresponds to William Shatner. He appeared in several sci-fi movies in 1994, amongst them [*Star Trek: Generations*](http://www.imdb.com/title/tt0111280/?ref_=nm_flmg_act_86).
 
-> **Exercise:** Can you identify which cluster corresponds to the actors from *Star Trek: Generations*? To find Shatner's neighbors in the network, right click on his entry in the Data Laboratory and choose 'Select neighbour nodes on table'.
+> **Explore:** Can you identify which cluster corresponds to the actors from *Star Trek: Generations*? To find Shatner's neighbors in the network, right click on his entry in the Data Laboratory and choose 'Select neighbour nodes on table'.
 
 Degree is just one of many possible [node centralities](https://en.wikipedia.org/wiki/Centrality). A node has large degree centrality if it is connected to many other nodes in the network. Another form of node centrality is [eigenvector centrality](https://en.wikipedia.org/wiki/Centrality#Eigenvector_centrality). A node with high eigenvector centrality has a lot of connections to other nodes that also have many connections.
 
-> **Exercise:** Compute the eigenvector centrality of the nodes in the network using the appropriate option in the Statistics panel. How do the eigenvector centralities compare to the degree centralities? Resize the nodes using the eigenvector centralities, and compare the nodes that stand out under each centrality.
+> **Explore:** Compute the eigenvector centrality of the nodes in the network using the appropriate option in the Statistics panel. How do the eigenvector centralities compare to the degree centralities? Resize the nodes using the eigenvector centralities, and compare the nodes that stand out under each centrality.
 
 ## Network Analysis with igraph &mdash; Network Analysis in a Scripting Environment
 
@@ -128,12 +128,12 @@ Open RStudio. RStudio is an [Integrated Development Environment](https://en.wiki
 
 First, we need to set the working directory to the sfinsc-day1 folder on your machine.
 
-> **Exercise:**
+> **Explore:**
 > 
 > In Mac OS, get the path by Option-Right-clicking on sfinsc-day1 and selecting ``Copy "sfinsc-day1" as Pathname``.
 > 
 > In Windows, get the path by Shift-Right-clicking on  sfinsc-day1 and selecting ``Copy Path``.
-> **NOTE:** Windows uses backslashes (\) between directories, while R expects forward slashes (/). You will have to manually change the backslashes to forward slashes. I suggeset using Find & Replace in Sublime Text.
+> **NOTE:** Windows uses backslashes (\\) between directories, while R expects forward slashes (/). You will have to manually change the backslashes to forward slashes. I suggest using Find & Replace in Sublime Text.
 
 Set the working directory by entering the``setwd`` function in the Console:
 
@@ -162,7 +162,7 @@ The remaining code uses igraph functions to analyze the network. A list of all i
 
 With these in mind, let's explore some of the functionality of igraph.
 
-> **Exercise:** Running the remaining code in ``igraph-example.R``, and compare to the statistics computed by Gephi.
+> **Explore:** Running the remaining code in ``igraph-example.R``, and compare to the statistics computed by Gephi.
 
 ## Network Exploration with Additional Data Sets
 
@@ -181,3 +181,7 @@ The original data are available [here](https://networkdata.ics.uci.edu/data.php?
 ### US Senate Co-Voting Networks
 
 Start [here](https://github.com/ddarmon/sfinsc-day1/blob/master/senate.md).
+
+## Final Thoughts
+
+The discipline of Network Science is huge, and continually growing. See the [Awesome Network Analysis](https://github.com/briatte/awesome-network-analysis) page curated by [François Briatte](http://f.briatte.org/) for a list of (almost) all things networks. And then from there, follow links of links of links of... Well, you get the idea.
