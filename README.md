@@ -30,6 +30,10 @@ A nice Integrated Development Environment (IDE) for R can be found here:
 
 For our first network, we will investigate a co-acting network generated using data from the [Internet Movie Database (IMDB)](http://www.imdb.com/). In our co-acting network, the nodes will correspond to actors, and an edge will exist between two nodes (actors) if the actors appeared in one or more movies together.
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/ddarmon/sfinsc-day2/master/graphics/imdb-bipartite.png">
+</p>
+
 > **Explore:** What sort of questions might we answer using co-acting network? About actors? About genres? About different eras of film?
 
 ## Data Cleaning
